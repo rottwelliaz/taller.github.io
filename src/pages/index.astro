@@ -10,13 +10,37 @@ import Layout from '../layouts/Layout.astro';
       <p class="subtitle">
         Gestión de Servicios, Agendamiento Automatizado y Comunicación Centralizada para Barberías en la ciudad de Concepción.
       </p>
+      <div class="hero-tags">
+        <span class="tag">Barberías de Concepción</span>
+        <span class="tag">Reserva en tiempo real</span>
+        <span class="tag">Comunicación centralizada</span>
+      </div>
+
+      <div class="stats-grid">
+        <article class="stat-card">
+          <p class="stat-label">Fases del proyecto</p>
+          <p class="stat-value">5</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-label">Módulos iniciales</p>
+          <p class="stat-value">5</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-label">Horizonte estimado</p>
+          <p class="stat-value">5 meses</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-label">Ciudad objetivo</p>
+          <p class="stat-value">Concepción</p>
+        </article>
+      </div>
 
 
     </section>
 
     <section id="servicios" class="grid">
       <article class="card">
-        <h3>¿Que es lo que buscamos?</h3>
+        <h3>¿Qué es lo que buscamos?</h3>
         <p>Implementar una plataforma web centralizada que permita a los barberos de Concepción profesionalizar su servicio. El objetivo es eliminar las agendas de papel y los mensajes dispersos, ofreciendo una vitrina digital moderna donde cada profesional pueda mostrar su trabajo y gestionar su tiempo de forma eficiente.</p>
       </article>
       <article class="card">
@@ -29,19 +53,171 @@ import Layout from '../layouts/Layout.astro';
       </article>
     </section>
 
+    <section id="informacion" class="info-section">
+      <h2>Información clave</h2>
+      <div class="info-grid">
+        <article class="info-box">
+          <h3>Tiempo de implementación</h3>
+          <p>Despliegue proyectado en fases para validar funcionamiento, experiencia de usuario y estabilidad de la plataforma.</p>
+        </article>
+        <article class="info-box">
+          <h3>Beneficio para barberos</h3>
+          <p>Menos interrupciones y mejor organización diaria gracias a una agenda digital que centraliza reservas y consultas.</p>
+        </article>
+        <article class="info-box">
+          <h3>Beneficio para clientes</h3>
+          <p>Reserva simple desde cualquier dispositivo, confirmación rápida y acceso claro a horarios y servicios disponibles.</p>
+        </article>
+        <article class="info-box">
+          <h3>Escalabilidad</h3>
+          <p>La arquitectura permite incorporar más barberías, nuevos módulos y mejoras continuas sin rehacer la plataforma.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="proposal">
+      <h2>Resumen de la propuesta</h2>
+      <p>
+        Esta propuesta plantea el desarrollo de una plataforma web para barberías de la ciudad de Concepción, orientada a mejorar la gestión interna y la experiencia del cliente. El sistema unifica agendamiento, catálogo de servicios, comunicación y seguimiento en un solo entorno digital.
+      </p>
+
+      <div class="proposal-grid">
+        <article class="proposal-card">
+          <h3>Problema detectado</h3>
+          <p>
+            Muchas barberías aún administran sus citas por agenda física, llamadas telefónicas o mensajes en redes sociales, generando desorden, sobrecupos y pérdida de oportunidades de atención.
+          </p>
+        </article>
+        <article class="proposal-card">
+          <h3>Solución propuesta</h3>
+          <p>
+            Implementar una plataforma con reservas en línea, panel de administración para barberos y canal de contacto centralizado para consultas, cambios y confirmaciones.
+          </p>
+        </article>
+        <article class="proposal-card">
+          <h3>Público objetivo</h3>
+          <p>
+            Barberos y barberías independientes de Concepción que buscan modernizar su operación, y clientes que necesitan agendar de manera rápida y clara.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="proposal-detail">
+      <h2>Objetivos</h2>
+      <article class="detail-block">
+        <h3>Objetivo general</h3>
+        <p>
+          Diseñar e implementar una plataforma web centralizada para la gestión de servicios de barbería, permitiendo optimizar tiempos, mejorar la comunicación y profesionalizar la atención al cliente.
+        </p>
+      </article>
+      <article class="detail-block">
+        <h3>Objetivos específicos</h3>
+        <ul>
+          <li>Digitalizar el proceso de reserva de horas con disponibilidad en tiempo real.</li>
+          <li>Centralizar la comunicación entre clientes y barberos en un solo canal.</li>
+          <li>Mostrar servicios, precios y trabajos realizados para fortalecer la vitrina digital.</li>
+          <li>Reducir errores de coordinación y ausencias mediante confirmaciones y recordatorios.</li>
+          <li>Facilitar el seguimiento de citas para apoyar la fidelización de clientes.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="proposal-detail">
+      <h2>Alcance del sistema</h2>
+      <article class="detail-block">
+        <h3>Módulos principales</h3>
+        <ul>
+          <li><strong>Gestión de perfiles:</strong> información de barberías, especialidades, horarios y medios de contacto.</li>
+          <li><strong>Agendamiento en línea:</strong> selección de servicio, fecha y bloque horario disponible.</li>
+          <li><strong>Panel de administración:</strong> control de citas, cambios, cancelaciones y estado de atención.</li>
+          <li><strong>Comunicación centralizada:</strong> consultas y respuestas en un espacio único asociado a cada cita.</li>
+          <li><strong>Catálogo digital:</strong> servicios, valores referenciales y trabajos destacados.</li>
+        </ul>
+      </article>
+      <article class="detail-block">
+        <h3>Fuera de alcance inicial</h3>
+        <ul>
+          <li>Integración con pasarelas de pago en la primera versión.</li>
+          <li>Aplicación móvil nativa en etapa inicial (el acceso será web responsive).</li>
+          <li>Integración avanzada con sistemas externos de contabilidad.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="proposal-detail timeline-section">
+      <h2>Metodología y plan de trabajo</h2>
+      <article class="detail-block timeline-block">
+        <h3>Fases del proyecto</h3>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h4>Levantamiento de requerimientos</h4>
+            <p>Entrevistas y definición de flujo operativo real.</p>
+          </article>
+          <article class="timeline-item">
+            <h4>Diseño funcional y de interfaz</h4>
+            <p>Prototipos y validación con usuarios objetivo.</p>
+          </article>
+          <article class="timeline-item">
+            <h4>Desarrollo del MVP</h4>
+            <p>Implementación de módulos críticos de reserva y gestión.</p>
+          </article>
+          <article class="timeline-item">
+            <h4>Pruebas y ajustes</h4>
+            <p>Corrección de incidencias y mejoras de usabilidad y rendimiento.</p>
+          </article>
+          <article class="timeline-item">
+            <h4>Implementación piloto</h4>
+            <p>Uso controlado en barberías seleccionadas de Concepción.</p>
+          </article>
+        </div>
+      </article>
+      <article class="detail-block">
+        <h3>Cronograma referencial</h3>
+        <ul>
+          <li>Mes 1: análisis, requerimientos y diseño inicial.</li>
+          <li>Mes 2 y 3: desarrollo de funcionalidades principales.</li>
+          <li>Mes 4: pruebas funcionales y mejora de experiencia.</li>
+          <li>Mes 5: piloto, medición de resultados y cierre técnico.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="proposal-detail">
+      <h2>Impacto esperado</h2>
+      <article class="detail-block">
+        <ul>
+          <li>Disminución de horas perdidas por mala coordinación o dobles reservas.</li>
+          <li>Mayor visibilidad digital del trabajo de cada profesional.</li>
+          <li>Mejora en la atención al cliente mediante respuestas claras y trazables.</li>
+          <li>Aumento de productividad al reducir tareas manuales administrativas.</li>
+          <li>Base tecnológica escalable para nuevas funciones en versiones futuras.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="proposal-detail">
+      <h2>Riesgos y mitigaciones</h2>
+      <article class="detail-block">
+        <ul>
+          <li><strong>Baja adopción inicial:</strong> capacitación breve y onboarding guiado para barberos.</li>
+          <li><strong>Resistencia al cambio:</strong> interfaz simple y migración gradual desde procesos manuales.</li>
+          <li><strong>Errores de disponibilidad:</strong> validaciones de agenda en tiempo real y reglas de negocio.</li>
+          <li><strong>Caída de comunicación:</strong> respaldo de historial y notificaciones automáticas.</li>
+        </ul>
+      </article>
+    </section>
+
     <section id="contacto" class="contact">
       <h2>Francico Flores Cares</h2>
-      <p>
-	  Estudiante
-	  </p>
-	  </p>
-	  Ing. de ejecucion  en computacion e informatica
-	  </p>
+      <p>Estudiante de Ingeniería de Ejecución en Computación e Informática.</p>
     </section>
   </main>
 </Layout>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Sora:wght@600;700&display=swap');
+
   :root {
     --bg: #0b0b10;
     --bg-soft: #12121a;
@@ -61,7 +237,7 @@ import Layout from '../layouts/Layout.astro';
       radial-gradient(700px 450px at 90% 0%, #06b6d433 0%, transparent 60%),
       linear-gradient(180deg, #0a0a0f 0%, #0d0d14 100%);
     padding: 72px 20px;
-    font-family: Inter, Segoe UI, Arial, sans-serif;
+    font-family: Manrope, 'Segoe UI', sans-serif;
   }
 
   .hero {
@@ -72,6 +248,19 @@ import Layout from '../layouts/Layout.astro';
     border-radius: 18px;
     background: linear-gradient(160deg, #131320 0%, #0e0e16 100%);
     box-shadow: 0 20px 80px #00000066;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    right: -140px;
+    top: -140px;
+    background: radial-gradient(circle at center, #ffffff1f 0%, #ffffff05 45%, transparent 70%);
+    pointer-events: none;
   }
 
   .kicker {
@@ -91,13 +280,58 @@ import Layout from '../layouts/Layout.astro';
     font-size: clamp(2rem, 5vw, 3.5rem);
     line-height: 1.1;
     font-weight: 800;
+    font-family: Sora, Manrope, sans-serif;
+    max-width: 20ch;
   }
 
   .subtitle {
-    margin: 0;
+    margin: 0 0 18px;
     color: var(--muted);
     max-width: 60ch;
     font-size: 1.05rem;
+  }
+
+  .hero-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+
+  .tag {
+    padding: 7px 12px;
+    border-radius: 999px;
+    border: 1px solid #ffffff1c;
+    font-size: 0.78rem;
+    color: #dce1ff;
+    background: #ffffff08;
+    backdrop-filter: blur(5px);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+  }
+
+  .stat-card {
+    border: 1px solid #ffffff1a;
+    border-radius: 12px;
+    padding: 14px;
+    background: linear-gradient(165deg, #ffffff0e 0%, #ffffff04 100%);
+  }
+
+  .stat-label {
+    margin: 0 0 6px;
+    font-size: 0.82rem;
+    color: #b3bbdf;
+  }
+
+  .stat-value {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #f2f5ff;
   }
 
   .actions {
@@ -140,7 +374,18 @@ import Layout from '../layouts/Layout.astro';
     border: 1px solid var(--border);
     border-radius: 14px;
     padding: 20px;
-    background: linear-gradient(160deg, #141421 0%, #0f0f18 100%);
+    background: linear-gradient(160deg, #171727 0%, #10101b 100%);
+    box-shadow: 0 12px 34px #00000038;
+    transition: transform 180ms ease, border-color 180ms ease;
+  }
+
+  .card:hover,
+  .info-box:hover,
+  .proposal-card:hover,
+  .detail-block:hover,
+  .contact:hover {
+    transform: translateY(-2px);
+    border-color: #3a3d54;
   }
 
   .card h3 {
@@ -154,13 +399,147 @@ import Layout from '../layouts/Layout.astro';
     color: var(--muted);
   }
 
+  .info-section {
+    max-width: 980px;
+    margin: 26px auto 0;
+  }
+
+  .info-section h2 {
+    margin: 0 0 14px;
+    font-size: 1.35rem;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
+
+  .info-box {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+    background: linear-gradient(145deg, #171729 0%, #11111d 100%);
+    box-shadow: inset 0 1px 0 #ffffff10;
+  }
+
+  .info-box h3 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+  }
+
+  .info-box p {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .proposal,
+  .proposal-detail {
+    max-width: 980px;
+    margin: 26px auto 0;
+  }
+
+  .proposal h2,
+  .proposal-detail h2 {
+    margin: 0 0 14px;
+    font-size: 1.35rem;
+  }
+
+  .proposal > p {
+    margin: 0 0 16px;
+    color: var(--muted);
+  }
+
+  .proposal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
+
+  .proposal-card,
+  .detail-block {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    background: linear-gradient(160deg, #171727 0%, #10101b 100%);
+    box-shadow: 0 12px 34px #00000038;
+  }
+
+  .proposal-card h3,
+  .detail-block h3 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+  }
+
+  .proposal-card p,
+  .detail-block p {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .detail-block {
+    margin-top: 14px;
+  }
+
+  .detail-block ul,
+  .detail-block ol {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--muted);
+    display: grid;
+    gap: 8px;
+  }
+
+  .detail-block strong {
+    color: #dbe2ff;
+  }
+
+  .timeline-section .detail-block {
+    margin-top: 14px;
+  }
+
+  .timeline {
+    display: grid;
+    gap: 10px;
+  }
+
+  .timeline-item {
+    border: 1px solid #ffffff1a;
+    border-radius: 12px;
+    padding: 14px;
+    background: linear-gradient(160deg, #ffffff0b 0%, #ffffff03 100%);
+    position: relative;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    border-radius: 12px 0 0 12px;
+    background: linear-gradient(180deg, var(--accent-a), var(--accent-b));
+  }
+
+  .timeline-item h4 {
+    margin: 0 0 4px;
+    font-size: 0.98rem;
+    color: #f0f3ff;
+  }
+
+  .timeline-item p {
+    margin: 0;
+    color: var(--muted);
+  }
+
   .contact {
     max-width: 980px;
     margin: 26px auto 0;
     padding: 22px;
     border: 1px solid var(--border);
     border-radius: 14px;
-    background: #10101a;
+    background: linear-gradient(165deg, #171727 0%, #10101b 100%);
   }
 
   .contact h2 {
@@ -176,5 +555,26 @@ import Layout from '../layouts/Layout.astro';
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+  }
+
+  @media (max-width: 640px) {
+    .page {
+      padding: 42px 14px;
+    }
+
+    .hero {
+      padding: 22px;
+      margin-bottom: 34px;
+    }
+
+    h1 {
+      font-size: clamp(1.7rem, 8vw, 2.3rem);
+    }
+
+    .proposal h2,
+    .proposal-detail h2,
+    .info-section h2 {
+      font-size: 1.2rem;
+    }
   }
 </style>
