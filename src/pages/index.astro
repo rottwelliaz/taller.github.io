@@ -1,5 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const withBase = (path: string) => {
+  const base = import.meta.env.BASE_URL.endsWith('/')
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`;
+
+  return `${base}${path.replace(/^\//, '')}`;
+};
 ---
 
 <Layout title="BarberiasConce | Plataforma para Barberias">
@@ -107,7 +115,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <figure class="example-frame">
         <img
-          src={`${import.meta.env.BASE_URL}ejemplo-propuesta.jpg`}
+          src={withBase('ejemplo-propuesta.jpg')}
           alt="Ejemplo visual del estilo final de la plataforma"
           loading="lazy"
           onerror="this.closest('.example-frame').classList.add('image-missing'); this.remove();"
