@@ -2,179 +2,710 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout>
-  <main class="page">
-    <section class="hero">
-      <p class="kicker">Taller de Desarrollo</p>
-      <h1>Propuesta para proyecto de titulo</h1>
-      <p class="subtitle">
-        Gestión de Servicios, Agendamiento Automatizado y Comunicación Centralizada para Barberías en la ciudad de Concepción.
+<Layout title="BarberiasConce | Plataforma para Barberias">
+  <main class="site">
+    <header class="topbar">
+      <a class="brand" href="#inicio">
+        <span class="logo-dot"></span>
+        BarberiasConce
+      </a>
+      <nav class="nav-links">
+        <a href="#propuesta">Propuesta</a>
+        <a href="#pilares">Pilares</a>
+        <a href="#ejemplo">Ejemplo</a>
+        <a href="#autor">Autor</a>
+      </nav>
+      <a class="top-cta" href="#autor">Ver tesis</a>
+    </header>
+
+    <section id="inicio" class="hero">
+      <p class="hero-kicker">Propuesta de titulo</p>
+      <h1>Plataforma web para modernizar barberias en Concepcion</h1>
+      <p class="hero-copy">
+        Una solucion centralizada para profesionalizar el servicio: mostrar trabajos,
+        ordenar reservas y mejorar la comunicacion con clientes.
       </p>
-
-
+      <div class="hero-actions">
+        <a class="btn btn-main" href="#pilares">Ver pilares clave</a>
+        <a class="btn btn-ghost" href="#autor">Sobre el autor</a>
+      </div>
+      <ul class="platforms">
+        <li>Vitrina digital</li>
+        <li>Reservas automaticas</li>
+        <li>Chat centralizado</li>
+      </ul>
+      <div class="hero-panel" aria-hidden="true">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="terminal-grid">
+          <article>
+            <h3>Barberos</h3>
+            <p>+Visibilidad</p>
+          </article>
+          <article>
+            <h3>Clientes</h3>
+            <p>+Comodidad</p>
+          </article>
+          <article>
+            <h3>Negocio</h3>
+            <p>+Control</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="servicios" class="grid">
-      <article class="card">
-        <h3>¿Que es lo que buscamos?</h3>
-        <p>Implementar una plataforma web centralizada que permita a los barberos de Concepción profesionalizar su servicio. El objetivo es eliminar las agendas de papel y los mensajes dispersos, ofreciendo una vitrina digital moderna donde cada profesional pueda mostrar su trabajo y gestionar su tiempo de forma eficiente.</p>
-      </article>
-      <article class="card">
-        <h3>Agendamiento Automatizado</h3>
-        <p>Se implementará un motor de reservas en tiempo real que permita a los clientes gestionar sus citas de forma autónoma desde cualquier dispositivo. Esto optimiza la jornada laboral del barbero al eliminar las interrupciones por llamadas o mensajes, garantizando una agenda organizada sin errores de sobrecupos.</p>
-      </article>
-      <article class="card">
-        <h3>Comunicación Centralizada</h3>
-        <p>La plataforma integrará un canal de comunicación directo (Chat Box) para centralizar todas las consultas técnicas y dudas sobre los servicios. Este módulo permite separar la vida personal del profesional de su actividad laboral, manteniendo la trazabilidad de la atención y mejorando la fidelización del cliente.</p>
-      </article>
-    </section>
-
-    <section id="contacto" class="contact">
-      <h2>Francico Flores Cares</h2>
+    <section id="propuesta" class="thesis-box">
+      <h2>Objetivo principal</h2>
       <p>
-	  Estudiante
-	  </p>
-	  </p>
-	  Ing. de ejecucion  en computacion e informatica
-	  </p>
+        Reemplazar agendas de papel y mensajes dispersos con una plataforma web moderna
+        que mejore la gestion y la experiencia del cliente.
+      </p>
+    </section>
+
+    <section class="context-grid">
+      <article class="context-card">
+        <h3>Problema actual</h3>
+        <p>
+          Muchas barberias gestionan citas por WhatsApp, Instagram y papel. Eso genera desorden,
+          sobrecarga de mensajes y perdida de tiempo para el profesional.
+        </p>
+      </article>
+      <article class="context-card">
+        <h3>Impacto esperado</h3>
+        <ul>
+          <li>Menos inasistencias y sobrecupos</li>
+          <li>Mejor experiencia para el cliente</li>
+          <li>Mayor control operativo del negocio</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="pilares" class="trust-grid">
+      <article>
+        <h3>Vitrina digital</h3>
+        <p>Cada barbero puede mostrar su trabajo y fortalecer su marca profesional.</p>
+      </article>
+      <article>
+        <h3>Agendamiento automatizado</h3>
+        <p>Reservas en tiempo real para evitar sobrecupos e interrupciones constantes.</p>
+      </article>
+      <article>
+        <h3>Comunicacion centralizada</h3>
+        <p>Un solo canal para consultas y seguimiento, con trazabilidad de atencion.</p>
+      </article>
+    </section>
+
+    <section id="ejemplo" class="showcase" aria-label="Vista objetivo de la plataforma">
+      <div class="showcase-copy">
+        <p class="showcase-kicker">Vista objetivo</p>
+        <h2>Así queremos que se perciba la plataforma</h2>
+        <p>
+          Una interfaz clara, ordenada y moderna, con foco en productividad.
+          Visualmente limpia para que el cliente reserve rapido y el barbero gestione mejor.
+        </p>
+      </div>
+      <figure class="example-frame">
+        <img
+          src="/ejemplo-propuesta.jpg"
+          alt="Ejemplo visual del estilo final de la plataforma"
+          loading="lazy"
+          onerror="this.closest('.example-frame').classList.add('image-missing'); this.remove();"
+        />
+      </figure>
+    </section>
+
+    <section id="autor" class="cta-band">
+      <h2>Francisco Flores Cares</h2>
+      <p>Estudiante de Ingenieria de Ejecucion en Computacion e Informatica</p>
+      <a href="#inicio" class="btn btn-main">Volver arriba</a>
     </section>
   </main>
 </Layout>
 
 <style>
-  :root {
-    --bg: #0b0b10;
-    --bg-soft: #12121a;
-    --text: #f5f7ff;
-    --muted: #a6accd;
-    --accent-a: #8b5cf6;
-    --accent-b: #06b6d4;
-    --accent-c: #ec4899;
-    --border: #2a2a38;
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+  :global(body) {
+    margin: 0;
+    background: #02081c;
   }
 
-  .page {
-    min-height: 100vh;
+  .site {
+    --bg-main: #02081c;
+    --bg-soft: #081b45;
+    --card-bg: #091532;
+    --border: #1f3e79;
+    --text: #f4f8ff;
+    --muted: #9fb7df;
+    --accent-a: #2f8fff;
+    --accent-b: #26dfcf;
     color: var(--text);
+    font-family: 'Manrope', 'Segoe UI', sans-serif;
+    padding: 24px;
     background:
-      radial-gradient(900px 500px at 10% -10%, #4f46e533 0%, transparent 60%),
-      radial-gradient(700px 450px at 90% 0%, #06b6d433 0%, transparent 60%),
-      linear-gradient(180deg, #0a0a0f 0%, #0d0d14 100%);
-    padding: 72px 20px;
-    font-family: Inter, Segoe UI, Arial, sans-serif;
+      radial-gradient(1000px 460px at 52% -12%, #15429666 0%, transparent 62%),
+      radial-gradient(620px 500px at 90% 12%, #2a8fd638 0%, transparent 70%),
+      linear-gradient(180deg, #02081c 0%, #03143a 40%, #02081c 100%);
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  .topbar {
+    max-width: 1160px;
+    margin: 0 auto;
+    border: 1px solid #183463;
+    border-radius: 14px;
+    background: #030f2bcc;
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 22px;
+    position: sticky;
+    top: 16px;
+    z-index: 40;
+  }
+
+  .brand {
+    color: var(--text);
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+  }
+
+  .logo-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-a), var(--accent-b));
+    box-shadow: 0 0 12px #2f8fffc2;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+
+  .nav-links a {
+    color: #d9e9ff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.92rem;
+  }
+
+  .top-cta {
+    color: #03173d;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #5eb4ff, #74ffe3);
   }
 
   .hero {
-    max-width: 980px;
-    margin: 0 auto 52px;
-    padding: 36px;
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    background: linear-gradient(160deg, #131320 0%, #0e0e16 100%);
-    box-shadow: 0 20px 80px #00000066;
+    max-width: 1160px;
+    margin: 22px auto 0;
+    border: 1px solid #1a3766;
+    border-radius: 24px;
+    padding: 78px 48px 34px;
+    background:
+      radial-gradient(620px 300px at 50% 0%, #1955ad55 0%, transparent 75%),
+      linear-gradient(160deg, #041134 0%, #030c24 100%);
+    text-align: center;
+    position: relative;
+    animation: reveal 0.8s ease-out;
   }
 
-  .kicker {
-    display: inline-block;
-    margin: 0 0 12px;
-    font-size: 0.8rem;
-    letter-spacing: 0.08em;
+  .hero-kicker {
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #d3d8ff;
-    padding: 6px 10px;
-    border-radius: 999px;
-    background: linear-gradient(90deg, var(--accent-a), var(--accent-b));
-  }
-
-  h1 {
-    margin: 0 0 12px;
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    line-height: 1.1;
-    font-weight: 800;
-  }
-
-  .subtitle {
+    color: #9cc6ff;
     margin: 0;
-    color: var(--muted);
-    max-width: 60ch;
-    font-size: 1.05rem;
   }
 
-  .actions {
-    margin-top: 24px;
+  .hero h1 {
+    margin: 16px auto 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(2.2rem, 6vw, 5rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    max-width: 14ch;
+    text-wrap: balance;
+  }
+
+  .hero-copy {
+    margin: 20px auto 0;
+    color: var(--muted);
+    max-width: 64ch;
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    margin-top: 30px;
     display: flex;
-    gap: 12px;
+    justify-content: center;
+    gap: 14px;
     flex-wrap: wrap;
   }
 
   .btn {
     text-decoration: none;
-    padding: 11px 16px;
-    border-radius: 10px;
-    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 11px;
+    font-weight: 800;
+    font-size: 0.92rem;
     border: 1px solid transparent;
+    transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease;
   }
 
-  .btn-primary {
-    color: white;
-    background: linear-gradient(90deg, var(--accent-a), var(--accent-c), var(--accent-b));
-    background-size: 200% 200%;
-    animation: move 6s ease infinite;
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .btn-main {
+    color: #001538;
+    background: linear-gradient(90deg, var(--accent-a), var(--accent-b));
+    box-shadow: 0 12px 38px #3294f462;
   }
 
   .btn-ghost {
-    color: var(--text);
-    border-color: var(--border);
-    background: #141422;
+    color: #d7e7ff;
+    border-color: #1d3f77;
+    background: #081533;
   }
 
-  .grid {
-    max-width: 980px;
-    margin: 0 auto;
+  .platforms {
+    margin: 30px auto 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .platforms li {
+    border: 1px solid #204885;
+    background: #08193a;
+    color: #c4deff;
+    border-radius: 999px;
+    font-size: 0.83rem;
+    padding: 8px 12px;
+    font-weight: 700;
+  }
+
+  .hero-panel {
+    margin-top: 34px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #1d3d74;
+    background: #050f2a;
+    box-shadow: inset 0 1px 0 #2d5ca54d;
+  }
+
+  .terminal-bar {
+    display: flex;
+    gap: 8px;
+    padding: 10px 14px;
+    border-bottom: 1px solid #173668;
+    background: #071634;
+  }
+
+  .terminal-bar span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #2a5a9d;
+  }
+
+  .terminal-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    padding: 18px;
+  }
+
+  .terminal-grid article {
+    border: 1px solid #204380;
+    background: linear-gradient(180deg, #08204a 0%, #08193a 100%);
+    border-radius: 12px;
+    padding: 12px;
+    text-align: left;
+  }
+
+  .terminal-grid h3 {
+    margin: 0;
+    font-size: 0.83rem;
+    color: #9fc3f0;
+    font-weight: 700;
+  }
+
+  .terminal-grid p {
+    margin: 10px 0 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
+    color: #eef5ff;
+  }
+
+  .thesis-box {
+    max-width: 1160px;
+    margin: 30px auto 0;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: linear-gradient(165deg, #071433 0%, #04102a 100%);
+    padding: 28px;
+    text-align: center;
+  }
+
+  .example-image-wrap {
+    max-width: 1160px;
+    margin: 24px auto 0;
+    border: 1px solid #1d3d74;
+    border-radius: 22px;
+    padding: 24px;
+    background: linear-gradient(165deg, #06142f 0%, #040e24 100%);
+    text-align: center;
+  }
+
+  .example-image-wrap h2 {
+    margin: 10px 0 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.35rem, 2.8vw, 1.9rem);
+  }
+
+  .example-frame {
+    margin: 16px 0 0;
+    border: 1px solid #29548f;
+    border-radius: 16px;
+    overflow: hidden;
+    background:
+      radial-gradient(220px 100px at 70% 35%, #1f5ea04f 0%, transparent 80%),
+      #040c20;
+    min-height: 260px;
+    display: grid;
+    place-items: center;
+  }
+
+  .example-frame img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .example-frame.image-missing::before {
+    content: 'Aqui aparecera tu imagen de referencia';
+    color: #b7cff2;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+  }
+
+  .example-note {
+    margin: 12px 0 0;
+    color: #9fb7df;
+    font-size: 0.9rem;
+  }
+
+  .thesis-box h2 {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+  }
+
+  .thesis-box p {
+    color: var(--muted);
+    margin: 12px 0 0;
+    line-height: 1.7;
+  }
+
+  .showcase {
+    max-width: 1160px;
+    margin: 22px auto 0;
+    border: 1px solid #1d3d74;
+    border-radius: 22px;
+    background:
+      radial-gradient(460px 180px at 10% 4%, #2b78ce4d 0%, transparent 80%),
+      linear-gradient(165deg, #05122c 0%, #040d21 100%);
+    padding: 26px;
+    display: grid;
+    gap: 20px;
+  }
+
+  .showcase-copy {
+    max-width: 70ch;
+  }
+
+  .showcase-kicker {
+    margin: 0;
+    color: #9ec8ff;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .showcase-copy h2 {
+    margin: 10px 0 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.4rem, 2.7vw, 2rem);
+  }
+
+  .showcase-copy p {
+    margin: 10px 0 0;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  .showcase-grid {
+    display: grid;
+    grid-template-columns: 1.45fr 1fr;
     gap: 14px;
   }
 
-  .card {
-    border: 1px solid var(--border);
-    border-radius: 14px;
+  .mock-card {
+    border: 1px solid #214980;
+    border-radius: 16px;
+    background: linear-gradient(165deg, #071633 0%, #06122b 100%);
+    overflow: hidden;
+  }
+
+  .mock-main header {
+    display: flex;
+    gap: 8px;
+    padding: 10px 12px;
+    border-bottom: 1px solid #1d3d75;
+    background: #081a3d;
+  }
+
+  .mock-main header span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #2f67ac;
+  }
+
+  .mock-body {
+    padding: 14px;
+    display: grid;
+    gap: 10px;
+  }
+
+  .mock-row {
+    height: 14px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #205696 0%, #16437e 60%, #0f2f5e 100%);
+  }
+
+  .mock-row.short {
+    width: 62%;
+  }
+
+  .mock-pill-row {
+    display: flex;
+    gap: 8px;
+  }
+
+  .mock-pill-row span {
+    height: 28px;
+    border-radius: 999px;
+    flex: 1;
+    background: #0b2957;
+    border: 1px solid #2a5d9d;
+  }
+
+  .mock-split {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .mock-split div {
+    height: 108px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #0a2b5f 0%, #0b234c 100%);
+    border: 1px solid #2a5b97;
+  }
+
+  .mock-side {
     padding: 20px;
-    background: linear-gradient(160deg, #141421 0%, #0f0f18 100%);
+    display: grid;
+    align-content: center;
+    gap: 8px;
   }
 
-  .card h3 {
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-size: 1.05rem;
-  }
-
-  .card p {
+  .mock-side h3 {
     margin: 0;
-    color: var(--muted);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
   }
 
-  .contact {
-    max-width: 980px;
-    margin: 26px auto 0;
-    padding: 22px;
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    background: #10101a;
-  }
-
-  .contact h2 {
-    margin: 0 0 8px;
-  }
-
-  .contact p {
+  .mock-side ul {
     margin: 0;
-    color: var(--muted);
+    padding-left: 18px;
+    color: #d9eaff;
+    line-height: 1.9;
   }
 
-  @keyframes move {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  .context-grid {
+    max-width: 1160px;
+    margin: 22px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .context-card {
+    border: 1px solid #1d3d74;
+    border-radius: 18px;
+    background: linear-gradient(165deg, #06142f 0%, #040e24 100%);
+    padding: 24px;
+  }
+
+  .context-card h3 {
+    margin: 0;
+    font-size: 1.08rem;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .context-card p {
+    margin: 10px 0 0;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  .context-card ul {
+    margin: 10px 0 0;
+    padding-left: 18px;
+    color: #dbe9ff;
+    line-height: 1.7;
+  }
+
+  .trust-grid {
+    max-width: 1160px;
+    margin: 30px auto 0;
+    border: 1px solid #1d3d74;
+    border-radius: 20px;
+    background: linear-gradient(165deg, #06142f 0%, #040e24 100%);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .trust-grid article {
+    padding: 28px;
+  }
+
+  .trust-grid article + article {
+    border-left: 1px solid #173869;
+  }
+
+  .trust-grid h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .trust-grid p {
+    margin: 10px 0 0;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  .cta-band {
+    max-width: 1160px;
+    margin: 28px auto 14px;
+    border: 1px solid #2a5fa1;
+    border-radius: 22px;
+    padding: 34px;
+    text-align: center;
+    background:
+      radial-gradient(260px 120px at 18% 16%, #3f93eb56 0%, transparent 75%),
+      linear-gradient(100deg, #0d2a63 0%, #0a204a 40%, #072248 100%);
+  }
+
+  .cta-band h2 {
+    margin: 0;
+    font-size: clamp(1.45rem, 3vw, 2.1rem);
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .cta-band p {
+    margin: 10px 0 22px;
+    color: #bfdbff;
+  }
+
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateY(26px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 960px) {
+    .site {
+      padding: 16px;
+    }
+
+    .topbar {
+      position: static;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+    }
+
+    .nav-links {
+      order: 3;
+      width: 100%;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .hero {
+      padding: 56px 20px 24px;
+    }
+
+    .terminal-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .trust-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .context-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .showcase-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .trust-grid article + article {
+      border-left: 0;
+      border-top: 1px solid #173869;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .terminal-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 13vw, 2.7rem);
+    }
   }
 </style>
